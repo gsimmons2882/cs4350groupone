@@ -46,8 +46,31 @@ class ParseFFL {
 
 $data = new ParseFFL("final.txt");
 
-print "<pre>";
-print_r($data->getFfl());
-print "</pre>";
+$link = mysql_connect('localhost', 'W00006074', 'Stephencs!');
+
+if(!$link)
+	echo 'Did not Insert Data';
+	
+foreach($data->getFfl() as $dataValue)
+{
+	$stmt = "INSERT INTO final_dealers(License_Number, Region, District, County, Type,
+				Expiration, Sequence_Num, License_Name, Business_Name, Premise_Address,
+				Premise_City, Premise_State, Premise_Zip, Mail_Street, Mail_City, 
+				Mail_State, Mail_Zip, Phone, Issue_Date, Expire_Date)";
+	$stmt .= "VALUES('{$dataValue['LicenseNumber']}', '{$dataValue['LicenseRegion']}',
+				'{$dataValue['LicenseDistrict']}', '{$dataValue['LicenseCounty']}', 
+				'{$dataValue['LicenseType']}', '{$dataValue['LicenseExpDt']}', 
+				'{$dataValue['LicenseSeqNum']}', '{$dataValue['Name']}', 
+				'{$dataValue['Business']}',  '{$dataValue['PremiseAddress']}', 
+				'{$dataValue['PremiseCity']}', '{$dataValue['PremiseState']}', 
+				'{$dataValue['PremiseZip']}', '{$dataValue['MailStreet']}', 
+				'{$dataValue['MailCity']}', '{$dataValue['MailState']}', 
+				'{$dataValue['MailZip']}', '{$dataValue['Phone']}', 
+				'{$dataValue['IssueDate']}', '{$dataValue['ExpirationDate']}');" 
+				 
+	mysql_query($stmt, $link);
+	echo mysql_affected_rows($link) . "<br />";
+}			
+
 
 ?>
