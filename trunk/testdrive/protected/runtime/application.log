@@ -1,0 +1,40 @@
+2012/02/27 18:54:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/sw06074/public_html/cs4350/ass8/framework/gii/GiiModule.php:165
+Stack trace:
+#0 /home/sw06074/public_html/cs4350/ass8/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/sw06074/public_html/cs4350/ass8/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/sw06074/public_html/cs4350/ass8/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#3 /home/sw06074/public_html/cs4350/ass8/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/sw06074/public_html/cs4350/ass8/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~sw06074/cs4350/ass8/testdrive/index.php?r=gii
+---
+2012/02/27 18:54:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/sw06074/public_html/cs4350/ass8/framework/gii/GiiModule.php:165
+Stack trace:
+#0 /home/sw06074/public_html/cs4350/ass8/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/sw06074/public_html/cs4350/ass8/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/sw06074/public_html/cs4350/ass8/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#3 /home/sw06074/public_html/cs4350/ass8/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/sw06074/public_html/cs4350/ass8/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~sw06074/cs4350/ass8/testdrive/index.php?r=gii
+---
+2012/02/27 18:55:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/sw06074/public_html/cs4350/ass8/framework/gii/GiiModule.php:165
+Stack trace:
+#0 /home/sw06074/public_html/cs4350/ass8/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/sw06074/public_html/cs4350/ass8/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/sw06074/public_html/cs4350/ass8/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#3 /home/sw06074/public_html/cs4350/ass8/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/sw06074/public_html/cs4350/ass8/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~sw06074/cs4350/ass8/testdrive/index.php?r=gii
+---
+2012/02/27 18:56:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/sw06074/public_html/cs4350/ass8/framework/gii/GiiModule.php:165
+Stack trace:
+#0 /home/sw06074/public_html/cs4350/ass8/framework/web/CController.php(264): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/sw06074/public_html/cs4350/ass8/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/sw06074/public_html/cs4350/ass8/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#3 /home/sw06074/public_html/cs4350/ass8/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/sw06074/public_html/cs4350/ass8/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~sw06074/cs4350/ass8/testdrive/index.php?r=gii
+---
