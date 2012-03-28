@@ -44,13 +44,16 @@ class ParseFFL {
 	}
 }
 
-$data = new ParseFFL("final.txt");
 
 $link = mysql_connect('localhost', 'W00006074', 'Stephencs!');
 
 if(!$link)
 	echo 'Did not Insert Data';
-	
+
+for($i = 0; $i < 2; $i+=1)
+{
+		$fileName = "final".$i.".txt";
+		$data = new ParseFFL($fileName);
 foreach($data->getFfl() as $dataValue)
 {
 	$stmt = "INSERT INTO final_dealers(License_Number, Region, District, County, Type,
@@ -66,11 +69,11 @@ foreach($data->getFfl() as $dataValue)
 				'{$dataValue['PremiseZip']}', '{$dataValue['MailStreet']}', 
 				'{$dataValue['MailCity']}', '{$dataValue['MailState']}', 
 				'{$dataValue['MailZip']}', '{$dataValue['Phone']}', 
-				'{$dataValue['IssueDate']}', '{$dataValue['ExpirationDate']}');" 
+				'{$dataValue['IssueDate']}', '{$dataValue['ExpirationDate']}');";
 				 
 	mysql_query($stmt, $link);
 	echo mysql_affected_rows($link) . "<br />";
 }			
-
+}
 
 ?>
