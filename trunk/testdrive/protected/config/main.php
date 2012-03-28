@@ -5,6 +5,7 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+$config = parse_ini_file("config.ini.php");
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Digital EpheX',
@@ -29,7 +30,7 @@ return array(
 			'password'=>'*Xc3@Zz!',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			//'ipFilters'=>array('127.0.0.1','::1'),
-			'ipFilters'=>array('137.190.210.65','::1'),
+			'ipFilters'=>array('137.190.208.150','::1'),
 
 			'generatorPaths'=>array(
 					'bootstrap.gii', // since 0.9.1
@@ -79,10 +80,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		*/
 		'db'=>array( // Change to use config file
-			'connectionString' => 'mysql:host=localhost;dbname=W00006074',
+			'connectionString' => 'mysql:host='.$config['host'].';dbname='.$config['database'],
 			'emulatePrepare' => true,
-			'username' => 'W00006074',
-			'password' => 'Stephencs!',
+			'username' => $config['username'],
+			'password' => $config['password'],
 			'charset' => 'utf8',
 		),
 		
