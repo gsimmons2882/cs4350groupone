@@ -1,0 +1,11 @@
+The url for the SVN is
+
+https://cs4350groupone.googlecode.com/svn/trunk/
+
+When you do a commit, your username is your gmail email address.
+
+garrettsimmons2772@gmail.com
+or
+sdwestbroek@gmail.com
+
+And the password will be a code in the Profile section of your gmail account's google code section.
