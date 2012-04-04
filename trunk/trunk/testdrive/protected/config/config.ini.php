@@ -1,6 +1,6 @@
 ;<?php
 ;die("Error: Access Denied!");
-;/*
+;
 
 [database]
 hostname="localhost"
@@ -9,5 +9,5 @@ database="W00006074"
 username="W00006074"
 password="Stephencs!"
 
-;*/
+;
 ;?>
