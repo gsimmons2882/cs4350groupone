@@ -25,7 +25,7 @@ $this->breadcrumbs=array(
 			'filter'=>false,
 		),
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'bootstrap.widgets.BootButtonColumn',
 		),
 	),
 )); ?>

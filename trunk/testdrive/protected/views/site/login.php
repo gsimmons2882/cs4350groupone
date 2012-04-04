@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 <p>Please fill out the following form with your login credentials:</p>
 
 <div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.BootActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
@@ -20,7 +20,7 @@ $this->breadcrumbs=array(
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<!--div class="row">
+	<div class="row">
 		<?php echo $form->labelEx($model,'username'); ?>
 		<?php echo $form->textField($model,'username'); ?>
 		<?php echo $form->error($model,'username'); ?>
@@ -43,9 +43,9 @@ $this->breadcrumbs=array(
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Login'); ?>
-	</div-->
+	</div>
 
-	<div class="form">
+	<!--div class="form">
 	<?php echo CHtml::beginForm(); ?>
  
 	    <div class="row">
@@ -61,7 +61,7 @@ $this->breadcrumbs=array(
 	    </div>
  
 	<?php echo CHtml::endForm(); ?>
-	</div><!-- form -->
+	</div--><!-- form -->
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->
