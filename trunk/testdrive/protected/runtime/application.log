@@ -38,3 +38,696 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/~sw06074/cs4350/ass8/testdrive/index.php?r=gii
 ---
+2012/04/04 18:45:24 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootBreadCrumbs" is invalid. Make sure it points to an existing PHP file.' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\YiiBase.php:318
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'bootstrap.widge...', Array)
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\views\layouts\main.php(42): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(127): require('C:\Users\w01107...')
+#5 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Users\w01107...', Array, true)
+#6 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\Users\w01107...', Array, true)
+#7 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="con...')
+#8 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#9 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#12 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(127): require('C:\Users\w01107...')
+#13 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Users\w01107...', Array, true)
+#14 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(785): CBaseController->renderFile('C:\Users\w01107...', Array, true)
+#15 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\controllers\PostController.php(136): CController->render('index', Array)
+#16 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#17 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#26 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('post/index')
+#27 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/trunk/testdrive/index.php/post/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/page?view=about
+---
+2012/04/04 18:45:33 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootCrumbs" is invalid. Make sure it points to an existing PHP file.' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\YiiBase.php:318
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(PostController), 'bootstrap.widge...', Array)
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\views\layouts\main.php(42): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(127): require('C:\Users\w01107...')
+#5 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Users\w01107...', Array, true)
+#6 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\Users\w01107...', Array, true)
+#7 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="con...')
+#8 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#9 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#12 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(127): require('C:\Users\w01107...')
+#13 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Users\w01107...', Array, true)
+#14 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(785): CBaseController->renderFile('C:\Users\w01107...', Array, true)
+#15 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\controllers\PostController.php(136): CController->render('index', Array)
+#16 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#17 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#26 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('post/index')
+#27 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/trunk/testdrive/index.php/post/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/page?view=about
+---
+2012/04/04 18:48:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:49:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/page?view=about
+---
+2012/04/04 18:50:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 18:50:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:50:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 18:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 18:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 18:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/
+---
+2012/04/04 18:50:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site
+---
+2012/04/04 18:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site
+---
+2012/04/04 18:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php
+---
+2012/04/04 18:51:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php
+---
+2012/04/04 18:52:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:52:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:52:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 18:52:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 18:53:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index?view=index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:53:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index?view=index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:54:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('site')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('post/site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/post/site
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:54:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:55:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:55:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/page?view=about
+---
+2012/04/04 18:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:57:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:57:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:58:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 18:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 19:00:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 19:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 19:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:04:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('site')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('post/site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/post/site
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 19:05:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('site')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/site
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/site
+---
+2012/04/04 19:05:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/site
+---
+2012/04/04 19:05:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:05:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:05:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:05:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:05:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:05:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:05:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/page?view=about
+---
+2012/04/04 19:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/page?view=about
+---
+2012/04/04 19:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:06:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/
+---
+2012/04/04 19:09:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/
+---
+2012/04/04 19:09:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/
+---
+2012/04/04 19:12:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/login
+---

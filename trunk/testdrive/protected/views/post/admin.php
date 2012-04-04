@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 ?>
 <h1>Manage Posts</h1>
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php $this->widget('bootstrap.widgets.BootGridView', array(
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(

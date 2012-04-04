@@ -6,7 +6,7 @@
 		</div><!-- content -->
 	</div>
 	<div class="span-6 last">
-		<div id="sidebar">
+		<div id="bootstrap.sidebar">
 			<?php if(!Yii::app()->user->isGuest) $this->widget('UserMenu'); ?>
 
 			<?php $this->widget('TagCloud', array(

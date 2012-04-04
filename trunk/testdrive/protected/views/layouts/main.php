@@ -21,23 +21,57 @@
 
 <div class="container" id="page">
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+	<!--div id="header">
+		<!--div id="logo"><?php //echo CHtml::encode(Yii::app()->name); ?></div-->
+	<!--/div--><!-- header -->
 
 	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
+		<?php $this->widget('bootstrap.widgets.BootNavBar',array(
+			'fixed'=>false,
+		    //'brand'=>'Project name',
+		    'brand'=>Yii::app()->name,
+		    'collapse'=>true, // requires bootstrap-responsive.css
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('post/index')),
-				array('label'=>'About', 'url'=>array('site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('site/contact')),
-				array('label'=>'Login', 'url'=>array('site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+				array(
+		            'class'=>'bootstrap.widgets.BootMenu',
+		            'items'=>array(
+					array('label'=>'Home', 'url'=>array('site/index')),
+					array('label'=>'Blog', 'url'=>array('post/index')),		            
+					array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+					array('label'=>'Contact', 'url'=>array('/site/contact')),
+					array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+		                /* array('label'=>'Dropdown', 'url'=>'#', 
+					'items'=>array(
+		                     	array('label'=>'DROPDOWN HEADER', 'itemOptions'=>array('class'=>'nav-header')),
+		                    		array('label'=>'Action', 'url'=>'#'),
+		                    		array('label'=>'Another action', 'url'=>'#'),
+		                    		array('label'=>'Something else here', 'url'=>'#'),
+		                    		'---',
+		                    		array('label'=>'Separated link', 'url'=>'#'),
+		                	)
+				  ),*/
+		            ),
+		        ),
+				array(
+		            'class'=>'bootstrap.widgets.BootMenu',
+		            'htmlOptions'=>array('class'=>'pull-right'),
+		            'items'=>array(
+		                /*array('label'=>'Link', 'url'=>'#'),
+		                array('label'=>'Dropdown', 'url'=>'#', 'items'=>array(
+		                    array('label'=>'Action', 'url'=>'#'),
+		                    array('label'=>'Another action', 'url'=>'#'),
+		                    array('label'=>'Something else here', 'url'=>'#'),
+		                    '---',
+		                    array('label'=>'Separated link', 'url'=>'#'),
+		                )),*/
+		            ),
+		        ),
 			),
 		)); ?>
 	</div><!-- mainmenu -->
 
-	<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+	<?php $this->widget('bootstrap.widgets.BootCrumb', array(
 		'links'=>$this->breadcrumbs,
 	)); ?><!-- breadcrumbs -->
 

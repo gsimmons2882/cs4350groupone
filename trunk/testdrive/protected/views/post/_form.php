@@ -1,6 +1,6 @@
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm'); ?>
+<?php $form=$this->beginWidget('bootstrap.widgets.BootActiveForm'); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
