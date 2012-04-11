@@ -4,6 +4,7 @@
  * Purpose: Parses the FFL file and stores the data in an array.
  *
  * Author: Stephen Westbroek
+ * Modified: Danny Barker
  */
 
 class ParseFFL {
@@ -11,11 +12,20 @@ class ParseFFL {
 
 	function __construct($file) {
 		$lines = file($file);
-
-		foreach($lines as $line) {
+		$i = 0;
+		foreach($lines as $line) 
+		{
 			$lineData = $this->parse($line);
 			$this->ffl[] = $lineData;
+			$i += 1;
+			if($i > 100)
+			{
+				save($this->ffl);
+				unset($this->ffl);
+				$i = 0;
+			}
 		}
+		save($this->ffl);
 	}
 
 	function getFfl() {
@@ -30,7 +40,7 @@ class ParseFFL {
 	}
 
 	function getExpiration($id) {
-		$month = array('A'=>"January",'B'=>"February",'C'=>"March",'D'=>"April",'E'=>"May",'F'=>"June",'G'=>"July",'H'=>"August",'J'=>"September",'K'=>"October",'L'=>"November",'M'=>"December");
+		$month = array('A'=>"01",'B'=>"02",'C'=>"03",'D'=>"04",'E'=>"05",'F'=>"06",'G'=>"07",'H'=>"08",'J'=>"09",'K'=>"10",'L'=>"11",'M'=>"12");
 		preg_match("{(\d)([A-N])}", $id, $exp);
 
 		if(substr(date('Y',strtotime("now")),-1,1) <= $exp[1]) {
@@ -38,39 +48,53 @@ class ParseFFL {
 		} else {
 			$year = substr_replace(date('Y',strtotime("+10 years")),$exp[1],-1,1);
 		}
-		//$year = (substr(date('Y',strtotime("now")),-1,1) <= $exp[1]) ? substr_replace(date('Y',strtotime("now")),$exp[1],-1,1) : substr_replace(date('Y',strtotime("+10 years")),$exp[1],-1,1);
-
-		return date("mdY", strtotime("01 ".$month[$exp[2]]." ".$year));
+		$year = (substr(date('Y',strtotime("now")),-1,1) <= $exp[1]) ? substr_replace(date('Y',strtotime("now")),$exp[1],-1,1) : substr_replace(date('Y',strtotime("+10 years")),$exp[1],-1,1);
+		
+		echo $month[$exp[2]] . "<br />";
+		
+		return date("Y-m-d", strtotime($year . $month[$exp[2]] . "01"));
+		
 	}
 }
 
-$data = new ParseFFL("FFL03072012.txt");
-
-$link = mysql_connect('localhost', 'W00006074', 'Stephencs!');
-
-if(!$link)
-	echo 'Did not Insert Data';
-	
-foreach($data->getFfl() as $dataValue)
+for($i = 0; $i < 1; $i += 1)
 {
-	$stmt = "INSERT INTO final_dealers(License_Number, Region, District, County, Type,
-				Expiration, Sequence_Num, License_Name, Business_Name, Premise_Address,
-				Premise_City, Premise_State, Premise_Zip, Mail_Street, Mail_City, 
-				Mail_State, Mail_Zip, Phone, Issue_Date, Expire_Date)";
-	$stmt .= "VALUES('{$dataValue['LicenseNumber']}', '{$dataValue['LicenseRegion']}',
-				'{$dataValue['LicenseDistrict']}', '{$dataValue['LicenseCounty']}', 
-				'{$dataValue['LicenseType']}', '{$dataValue['LicenseExpDt']}', 
-				'{$dataValue['LicenseSeqNum']}', '{$dataValue['Name']}', 
-				'{$dataValue['Business']}',  '{$dataValue['PremiseAddress']}', 
-				'{$dataValue['PremiseCity']}', '{$dataValue['PremiseState']}', 
-				'{$dataValue['PremiseZip']}', '{$dataValue['MailStreet']}', 
-				'{$dataValue['MailCity']}', '{$dataValue['MailState']}', 
-				'{$dataValue['MailZip']}', '{$dataValue['Phone']}', 
-				'{$dataValue['IssueDate']}', '{$dataValue['ExpirationDate']}');";
-				 
-	mysql_query($stmt, $link);
-	echo mysql_affected_rows($link) . "<br />";
-}			
+	$file = "Final".$i.".txt";
+	$data = new ParseFFL($file);
+}
 
+function save($data)
+{
+	$link = mysql_connect('localhost', 'W00006074', 'Stephencs!');
+
+	if(!$link)
+		echo 'Did not Insert Data';
+	if(!is_null($data))
+	{
+			
+		foreach($data as $dataValue)
+		{
+			$stmt = "INSERT INTO final_dealers(License_Number, Region, District, County, Type,
+						Expiration, Sequence_Num, License_Name, Business_Name, Premise_Address,
+						Premise_City, Premise_State, Premise_Zip, Mail_Street, Mail_City, 
+						Mail_State, Mail_Zip, Phone, Issue_Date, Expire_Date)";
+			$stmt .= "VALUES('{$dataValue['LicenseNumber']}', '{$dataValue['LicenseRegion']}',
+						'{$dataValue['LicenseDistrict']}', '{$dataValue['LicenseCounty']}', 
+						'{$dataValue['LicenseType']}', '{$dataValue['LicenseExpDt']}', 
+						'{$dataValue['LicenseSeqNum']}', '{$dataValue['Name']}', 
+						'{$dataValue['Business']}',  '{$dataValue['PremiseAddress']}', 
+						'{$dataValue['PremiseCity']}', '{$dataValue['PremiseState']}', 
+						'{$dataValue['PremiseZip']}', '{$dataValue['MailStreet']}', 
+						'{$dataValue['MailCity']}', '{$dataValue['MailState']}', 
+						'{$dataValue['MailZip']}', '{$dataValue['Phone']}', 
+						'{$dataValue['IssueDate']}', '{$dataValue['ExpirationDate']}');";
+				 
+				mysql_query($stmt, $link);
+			echo mysql_affected_rows($link) . "<br />";
+			//echo $dataValue['Phone'] . "<br />";
+			//echo $dataValue['ExpirationDate'] . "<br />";
+		}
+	}
+}
 
 ?>
