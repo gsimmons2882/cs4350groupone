@@ -731,3 +731,860 @@ Stack trace:
 REQUEST_URI=/trunk/testdrive/index.php/site/index
 HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/login
 ---
+2012/04/04 19:26:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/
+---
+2012/04/04 19:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/
+---
+2012/04/04 19:27:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/2?title=A+Test+Post
+---
+2012/04/04 19:29:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 19:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:29:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:29:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:29:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:29:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 19:36:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'blog'' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#7 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#8 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#10 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#19 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('post/index')
+#20 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/trunk/testdrive/index.php/post/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/index
+---
+2012/04/04 20:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/
+HTTP_REFERER=http://localhost:8080/trunk/
+---
+2012/04/04 20:09:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'W00006074'@'localhost' (using password: YES)' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#7 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#8 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#10 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#19 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('post/index')
+#20 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/trunk/testdrive/index.php/post/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/
+---
+2012/04/04 20:19:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/login
+---
+2012/04/04 20:21:34 [error] [exception.CException] exception 'CException' with message 'Property "Post.author_id" is not defined.' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(160): CComponent->__set('author_id', '1')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\models\Post.php(154): CActiveRecord->__set('author_id', '1')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(1008): Post->beforeSave()
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\protected\controllers\PostController.php(67): CActiveRecord->save()
+#5 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\actions\CInlineAction.php(50): PostController->actionCreate()
+#6 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('create')
+#15 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('post/create')
+#16 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/trunk/testdrive/index.php/post/create
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/create
+---
+2012/04/04 20:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/04 20:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/site/page?view=about
+---
+2012/04/04 20:54:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\w01107649\Desktop\xampp\htdocs\trunk\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://localhost:8080/trunk/testdrive/index.php/post/index
+---
+2012/04/09 19:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/
+---
+2012/04/09 19:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php
+---
+2012/04/09 19:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php
+---
+2012/04/09 19:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('index')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('index')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php
+---
+2012/04/09 19:27:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 111' in /home/db07649/public_html/CS4350/final/trunk/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#8 /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('index')
+#19 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('post/index')
+#20 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/post/index
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/site/index
+---
+2012/04/09 19:28:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/post/1?title=sadfasd
+---
+2012/04/09 19:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/site/login
+---
+2012/04/09 19:30:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/comment/index
+---
+2012/04/09 19:30:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('index')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('index')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/post/index
+---
+2012/04/09 19:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('index')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('index')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/post/index
+---
+2012/04/09 19:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('index')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('index')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/site/index
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/site/contact
+---
+2012/04/09 19:31:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/site/index
+---
+2012/04/09 19:31:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/site/login
+---
+2012/04/11 07:58:06 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 07:58:06 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:01:04 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:01:04 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:01:50 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:01:50 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:03:24 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:03:24 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:06:22 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:06:22 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:06:22 [error] [exception.CException] exception 'CException' with message 'Property "User.Salt" is not defined.' in /home/db07649/public_html/CS4350/final/trunk/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/db/ar/CActiveRecord.php(160): CComponent->__set('Salt', '4f852d6e1d1821....')
+#1 /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php(91): CActiveRecord->__set('Salt', '4f852d6e1d1821....')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/actions/CInlineAction.php(50): UserController->actionRegister()
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('register')
+#12 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('user/register')
+#13 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/user/register
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/user/register
+---
+2012/04/11 08:06:36 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:06:36 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:08:56 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:08:56 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('site')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('site')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('user/site/login')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/user/site/login
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/user/register
+---
+2012/04/11 08:09:39 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:09:39 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:14:07 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:14:07 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/UserController.php (90)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 08:46:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154023012F00018')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154023012F00018')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1540230...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/index
+---
+2012/04/11 08:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154147012G00102".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154147012G00102')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154147012G00102')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1541470...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154147012G00102
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/
+---
+2012/04/11 08:57:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154147012G00102".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154147012G00102')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154147012G00102')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1541470...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154147012G00102
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/
+---
+2012/04/11 08:59:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154147012G00102".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154147012G00102')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154147012G00102')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1541470...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154147012G00102
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/
+---
+2012/04/11 09:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154147012G00102".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154147012G00102')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154147012G00102')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1541470...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154147012G00102
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/
+---
+2012/04/11 09:07:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/id/154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('view/id/1540230...')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/view/id/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:08:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/0/154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('view/0/15402301...')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/view/0/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:08:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:337
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/view')
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/view?0=154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:09:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154023012F00018')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154023012F00018')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1540230...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:17:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:337
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/view/15...')
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/view/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/index/view/154023012F00018
+---
+2012/04/11 09:18:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:337
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/view/15...')
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/view/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/index/view/154023012F00018
+---
+2012/04/11 09:19:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:337
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/view/15...')
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/view/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:19:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:337
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/view/15...')
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/view/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:19:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154023012F00018')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154023012F00018')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1540230...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:20:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154023012F00018')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154023012F00018')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1540230...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:20:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:337
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/view/15...')
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/view/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:21:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154023012F00018')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154023012F00018')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1540230...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:21:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154023012F00018')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154023012F00018')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1540230...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:22:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "154023012F00018".' in /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php:484
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(271): CController->missingAction('154023012F00018')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('154023012F00018')
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/1540230...')
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154023012F00018
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+---
+2012/04/11 09:33:08 [error] [php] Object of class Dealers could not be converted to string (/home/db07649/public_html/CS4350/final/trunk/testdrive/protected/views/dealers/view.php:4)
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(870): DealersController->renderFile()
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(783): DealersController->renderPartial()
+#2 /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/DealersController.php(55): DealersController->render()
+#3 unknown(0): DealersController->actionView()
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): DealersController->runAction()
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): DealersController->filterAccessControl()
+#11 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): DealersController->runActionWithFilters()
+#14 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): DealersController->run()
+#15 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#16 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/154023012F00018
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/views/dealers/view.php (4)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/DealersController.php (55)
+in /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php (13)
+2012/04/11 09:51:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/db07649/public_html/CS4350/final/trunk/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers/admin')
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/admin
+---
+2012/04/11 10:03:30 [error] [exception.CException] exception 'CException' with message 'Property "BootListView.filter" is not defined.' in /home/db07649/public_html/CS4350/final/trunk/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWidgetFactory.php(162): CComponent->__set('filter', Object(Dealers))
+#1 /home/db07649/public_html/CS4350/final/trunk/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(DealersController), 'bootstrap.widge...', Array)
+#2 /home/db07649/public_html/CS4350/final/trunk/framework/web/CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/views/dealers/index.php(37): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/db07649/public_html/CS4350/final/trunk/framework/web/CBaseController.php(127): require('/home/db07649/p...')
+#5 /home/db07649/public_html/CS4350/final/trunk/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/db07649/p...', Array, true)
+#6 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(870): CBaseController->renderFile('/home/db07649/p...', Array, true)
+#7 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/db07649/public_html/CS4350/final/trunk/testdrive/protected/controllers/DealersController.php(136): CController->render('index', Array)
+#9 /home/db07649/public_html/CS4350/final/trunk/framework/web/actions/CInlineAction.php(50): DealersController->actionIndex()
+#10 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/db07649/public_html/CS4350/final/trunk/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/db07649/public_html/CS4350/final/trunk/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(276): CController->run('')
+#19 /home/db07649/public_html/CS4350/final/trunk/framework/web/CWebApplication.php(135): CWebApplication->runController('dealers')
+#20 /home/db07649/public_html/CS4350/final/trunk/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/db07649/public_html/CS4350/final/trunk/testdrive/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/~db07649/CS4350/final/trunk/testdrive/index.php/dealers
+HTTP_REFERER=http://icarus.cs.weber.edu/~db07649/CS4350/final/trunk/testdrive/index.php/dealers/admin
+---

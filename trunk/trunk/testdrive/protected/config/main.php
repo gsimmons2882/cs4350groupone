@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Yii Blog Demo',
+	'name'=>'Digital EpheX',
 
 	// preloading 'log' component
 	'preload'=>array('log', 'bootstrap',
@@ -19,7 +19,20 @@ return array(
 		'application.components.*',
 	),
 
-	'defaultController'=>'site',
+	'modules'=>array(
+		// uncomment the following to enable the Gii tool
+		
+		'gii'=>array(
+			'class'=>'system.gii.GiiModule',
+			'password'=>'abcde',
+		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
+			'ipFilters'=>array('75.169.7.125','::1'),
+			'generatorPaths'=>array('bootstrap.gii'),
+		),
+		
+	),
+
+	'defaultController'=>'post',
 
 	// application components
 	'components'=>array(
@@ -45,13 +58,10 @@ return array(
             			// http://twitter.github.com/bootstrap/javascript.html
         		),
     		),
-		/*'db'=>array(
-			'connectionString' => 'sqlite:protected/data/blog.db',
-			'tablePrefix' => 'tbl_',
-		),*/
+		
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=icarus.cs.weber.edu;dbname=W00006074',
+			'connectionString' => 'mysql:host=localhost;dbname=W00006074',
 			'emulatePrepare' => true,
 			'username' => 'W00006074',
 			'password' => 'Stephencs!',
@@ -66,9 +76,9 @@ return array(
         'urlManager'=>array(
         	'urlFormat'=>'path',
         	'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-        		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				'<controller:\w+>/<id:\d+\w*\d*>'=>'<controller>/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>/<id>',
+        			'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
         	),
         ),
 		'log'=>array(
