@@ -6,5 +6,6 @@ $this->breadcrumbs=array(
 ?>
 <h1>About</h1>
 
-<p>This is a "static" page. You may change the content of this page
-by updating the file <tt><?php echo __FILE__; ?></tt>.</p>
+<p>We're just a group that felt that it would be nice to have a site where people could find 
+nearby Licensed firearms dealers and to discuss/rate them on the quality of products they have, 
+and services they provide.</p>

@@ -10,6 +10,8 @@ class User extends CActiveRecord
 	 * @var string $salt
 	 * @var string $email
 	 * @var string $profile
+	 * @var string $name
+	 * @var string $zipcode
 	 */
 
 	/**
@@ -67,6 +69,8 @@ class User extends CActiveRecord
 			'salt' => 'Salt',
 			'email' => 'Email',
 			'profile' => 'Profile',
+			'name' => 'Name',
+			'zipcode' => 'ZipCode',
 		);
 	}
 
@@ -95,7 +99,7 @@ class User extends CActiveRecord
 	 * Generates a salt that can be used to generate a password hash.
 	 * @return string the salt
 	 */
-	protected function generateSalt()
+	public function generateSalt()
 	{
 		return uniqid('',true);
 	}
